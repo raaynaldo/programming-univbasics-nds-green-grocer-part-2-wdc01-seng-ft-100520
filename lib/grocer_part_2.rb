@@ -7,7 +7,8 @@ def apply_coupons(cart, coupons)
   coupons.each{ |coupon|
     findItem = find_item_by_name_in_collection(coupon[:item], cart)
     if findItem && findItem[:count]>coupon[:num]
-      find[:count]
+      totalCouponItem = find[:count]/coupon[:num]
+      findItem[:count] = totalCouponItem * coupon[:num]
     end
   }
 end
@@ -32,3 +33,4 @@ end
 
 
 puts 5/3
+puts 5.00/2
