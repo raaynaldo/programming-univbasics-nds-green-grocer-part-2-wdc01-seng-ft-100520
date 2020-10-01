@@ -51,6 +51,9 @@ def checkout(cart, coupons)
   final_cart.each{ |item|
     total +=item[:price]
   }
+
+    total
+  }
 end
 
 
