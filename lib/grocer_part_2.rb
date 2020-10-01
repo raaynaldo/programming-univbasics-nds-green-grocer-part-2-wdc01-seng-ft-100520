@@ -72,7 +72,6 @@ items =
     {:item => "BEETS", :price => 2.50, :clearance => false},
     {:item => "SOY MILK", :price => 4.50, :clearance => true}
   ]
-end
 
 beer = find_item_by_name_in_collection('BEER', items)
 beets = find_item_by_name_in_collection('BEETS', items)
