@@ -10,7 +10,6 @@ def apply_coupons(cart, coupons)
     if findItem && findItem[:count]>=coupon[:num]
       divideCoupon = find[:count]/coupon[:num]
       findItem[:count] = findItem[:count] - divideCoupon * coupon[:num]
-      binding.pry
       cart.push({
         :item => "#{find[:item]} W/COUPON",
         :price => coupon[:cost]/coupon[:num],
