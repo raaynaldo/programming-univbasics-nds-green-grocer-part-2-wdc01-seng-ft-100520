@@ -14,7 +14,7 @@ def apply_coupons(cart, coupons)
       cart.push({
         :item => "#{find[:item]} W/COUPON",
         :price => coupon[:cost]/coupon[:num],
-        :clearance => find[:clearance],
+        :clearance => findItem[:clearance],
         :count => divideCoupon * coupon[:num]
         })
     end
