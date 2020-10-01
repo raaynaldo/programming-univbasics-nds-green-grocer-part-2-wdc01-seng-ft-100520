@@ -1,4 +1,5 @@
 require_relative './part_1_solution.rb'
+require 'Pry'
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
@@ -10,7 +11,7 @@ def apply_coupons(cart, coupons)
 
       divideCoupon = find[:count]/coupon[:num]
       findItem[:count] = findItem[:count] - divideCoupon * coupon[:num]
-
+      binding.binding.pry
       cart.push({
         :item => "#{find[:item]} W/COUPON",
         :price => coupon[:cost]/coupon[:num],
