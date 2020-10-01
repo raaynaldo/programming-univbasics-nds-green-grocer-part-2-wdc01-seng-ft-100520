@@ -31,4 +31,4 @@ def checkout(cart, coupons)
 end
 
 
-puts 5/2
+puts 5/3
