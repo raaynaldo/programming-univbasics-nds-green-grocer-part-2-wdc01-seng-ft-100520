@@ -59,7 +59,7 @@ def checkout(cart, coupons)
 end
 
 
-let(:items) do
+items =
   [
     {:item => "AVOCADO", :price => 3.00, :clearance => true},
     {:item => "KALE", :price => 3.00, :clearance => false},
@@ -73,16 +73,6 @@ let(:items) do
     {:item => "SOY MILK", :price => 4.50, :clearance => true}
   ]
 end
-
-cart = [
-  {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3},
-  {:item => "KALE",    :price => 3.00, :clearance => false, :count => 1}
-]
-
-coupon = [
-  {:item => "AVOCADO", :num => 2, :cost => 5.00}
-]
-
 
 beer = find_item_by_name_in_collection('BEER', items)
 beets = find_item_by_name_in_collection('BEETS', items)
