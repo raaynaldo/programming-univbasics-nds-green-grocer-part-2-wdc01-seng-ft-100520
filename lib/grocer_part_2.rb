@@ -48,5 +48,4 @@ coupon = [
   {:item => "AVOCADO", :num => 2, :cost => 5.00}
 ]
 
-puts 5/3
-puts 5.00/2
+apply_coupons(cart, coupon)
