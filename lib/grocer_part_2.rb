@@ -4,6 +4,12 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  coupons.each{ |coupon|
+    findItem = find_item_by_name_in_collection(coupon[:item], cart)
+    if findItem && findItem[:count]>coupon[:num]
+      find[:count]
+    end
+  }
 end
 
 def apply_clearance(cart)
@@ -23,3 +29,6 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
 end
+
+
+puts 5/2
