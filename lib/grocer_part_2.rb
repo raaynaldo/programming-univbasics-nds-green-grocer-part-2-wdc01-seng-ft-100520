@@ -73,6 +73,13 @@ items =
     {:item => "SOY MILK", :price => 4.50, :clearance => true}
   ]
 
+coupons =
+    [
+      {:item => "AVOCADO", :num => 2, :cost => 5.00},
+      {:item => "BEER", :num => 2, :cost => 20.00},
+      {:item => "CHEESE", :num => 3, :cost => 15.00}
+    ]
+
 beer = find_item_by_name_in_collection('BEER', items)
 beets = find_item_by_name_in_collection('BEETS', items)
 cart = [beets, beer, beer, beer]
