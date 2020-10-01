@@ -8,7 +8,7 @@ def apply_coupons(cart, coupons)
   coupons.each{ |coupon|
     findItem = find_item_by_name_in_collection(coupon[:item], cart)
     if findItem && findItem[:count]>=coupon[:num]
-      divideCoupon = find[:count]/coupon[:num]
+      divideCoupon = findItem[:count]/coupon[:num]
       binding.pry
       findItem[:count] = findItem[:count] - divideCoupon * coupon[:num]
       cart.push({
